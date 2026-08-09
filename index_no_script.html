@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Surprise 🎂</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    details { margin-top: 22px; }
+    summary {
+      display: inline-block;
+      cursor: pointer;
+      list-style: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 15px 24px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #5b174f;
+      background: #fff;
+      box-shadow: 0 8px 25px rgba(0,0,0,.2);
+    }
+    summary::-webkit-details-marker { display: none; }
+    .surprise-box {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,.2);
+      animation: reveal .8s ease both;
+    }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="cake">🎂</div>
+    <p class="small">A little surprise for you...</p>
+    <h1>Happy Birthday! 🎉</h1>
+    <p class="message">
+      Wishing you a day full of smiles, happiness and lots of beautiful memories. ✨
+    </p>
+
+    <details>
+      <summary>Open Your Surprise 🎁</summary>
+      <div class="surprise-box">
+        <div class="confetti">🎊 🎈 ✨ 🎉 💫</div>
+        <h2>Make a wish! 🌟</h2>
+        <p>
+          May this new year of your life bring you many reasons to smile,
+          wonderful moments, and dreams that come true.
+        </p>
+        <div class="heart">💖</div>
+        <p class="closing">Have the happiest birthday ever! 🥳</p>
+      </div>
+    </details>
+  </main>
+</body>
+</html>
